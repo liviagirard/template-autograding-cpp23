@@ -1,11 +1,14 @@
 all: clean test
 
-appTests: tests.cpp student.hpp
-	g++ -Wall --std=c++17 tests.cpp catch_amalgamated.cpp -o appTests
+appTests: deps
+	mkdir -p build
+	cd build && cmake .. -GNinja
 
 test: appTests
-	# executes all tests
-	./appTests
+	./build/app_tests
+
+deps:
+	python3 -m pip install cmake --break-system-packages
 
 clean:
-	rm -f appTests
+	rm -f build/

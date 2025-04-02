@@ -1,11 +1,15 @@
-# autograding-example-cpp-catch
+# template-autograding-cpp23
 
-*Learning Autograding with C/C++ and Catch2 - Prof. Igor Machado Coelho*
+*Learning Autograding with C++23 - Prof. Igor Machado Coelho*
+
+This activity demonstrates basic functionality from C++23, including `import std;` and CXX Modules.
+Testing is done with boost::ut library, that currently supports modules.
+To build this activity, use CMake 4.0 with ninja. Tested on compilers GCC 15 and Clang 19.
 
 **IMPORTANT:** If autograding (GitHub Actions) doesn't start for you, *check again the Invitation Link for
 the activity* and hit the link named **update**.
 
-If you want to practice this activity, just follow this link: https://classroom.github.com/a/X_8PAk4h
+If you want to practice this activity, just follow this link: (TODO: update)
 
 ## Full-Name-Of-Student
 
@@ -26,20 +30,20 @@ This part describes the activity. This example activity consists in fixing two f
 
 ## Instructions
 
-- You can ONLY change files `student.hpp` and `README.md`!
-   * In file `student.hpp` put your implementations, and in `README.md` put your full name.
+- You can ONLY change files `src/student.cppm` and `README.md`!
+   * In file `src/student.cppm` put your implementations, and in `README.md` put your full name.
 
 Explanations for the other files:
 
-- file `tests.cpp` has all tests for the activity (DO NOT CHANGE!)
-- file `catch.hpp` has the testing library  CATCH2 (DO NOT CHANGE!)
-- file `makefile` has the commands for executing activity (DO NOT CHANGE!)
-- file  `appTests` will be generated after compiling (if you want to test locally, just execute it)
+- file `tests/tests.cpp` has all tests for the activity (DO NOT CHANGE!)
+- file `makefile` has the general Unix Makefile commands for executing activity (DO NOT CHANGE!)
+- file `CMakeLists.txt` has the CMake commands for executing activity (DO NOT CHANGE!)
+- file  `build/app_tests` will be generated after compiling (if you want to test locally, just execute it)
 
 ## Commands for Local Testing
 
 - Command to build and execute tests: `make test`
-    * If executable is built already, just type: `./appTests`
+    * If executable is built already, just type: `./build/app_tests`
 
 ## Notes
 
@@ -57,4 +61,4 @@ Check all other rules with instructor.
 
 ## License
 
-MIT License 2020
+MIT License 2025
