@@ -1,6 +1,6 @@
 # template-autograding-cpp23
 
-*Learning Autograding with C++23 - Prof. Igor Machado Coelho*
+*Learning Autograding with C++23 - Prof. Igor Machado Coelho* - *To understand this activity, please read the text [Easy C++23 GitHub Autograding with CMake 4, Clang 19 and Import Std](https://igormcoelho.medium.com/easy-c-23-github-autograding-with-cmake-4-clang-19-and-import-std-d5a4553f2d2a).*
 
 This activity demonstrates basic functionality from C++23, including `import std;` and CXX Modules.
 Testing is done with [boost ut library](https://github.com/boost-ext/ut), that currently supports modules.
